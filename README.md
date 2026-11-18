@@ -1,4 +1,4 @@
-The purpose of this lab was to build a multiplier that reads two numbers from the ROM and writes the answer into the RAM, with a control unit that handles the reading, multiplying and writing stages. We used the code the professor gave us as a starting point and filled it in with our ROM and RAM from Lab 9 and our combinational multiplier from Lab 8.
+The purpose of this lab was to build a multiplier that reads two numbers from the ROM and writes the answer into the RAM, with a control unit that handles the reading, multiplying and writing stages. We used the code the professor gave us as a starting point and filled it in with our ROM from Lab 9 and our combinational multiplier from Lab 8. The RAM and register file are from her template.
 
 The control unit (cu) goes through 6 states. S1 sends addr1_ROM to the ROM and loads that number into R0, S2 sends addr2_ROM and loads that number into R1, S3 lets the multiplier work on A and B, S4 sets w_ram so the product gets written into the RAM at addr_RAM, and S5 reads the RAM so the answer shows on result. It stays in S5 until reset is pressed.
 
